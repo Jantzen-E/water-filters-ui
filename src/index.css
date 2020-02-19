@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.list {
+  text-align: left;
+  /* list-style-type: none; */
+}
+
+.listStyleType {
+  list-style-type:none;
+}
+
+.delete {
+  background-color: rgb(243, 103, 103);
+  color: black;
+  font-weight: 900;
+  margin-top: 8px;
+}
+
+.blank {
+  text-align: center;
+}
+
+select {
+    text-align-last: center;
+    text-align: center;
+    /* -ms-text-align-last: center; */
+    -moz-text-align-last: center;
+}

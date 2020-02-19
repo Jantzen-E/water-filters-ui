@@ -5,13 +5,13 @@ class FiltrationList extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { listItems: [] }
+        // this.state = { listItems: [] }
 
         this.renderItems = this.renderItems.bind(this);
     }
 
     // componentDidMount() {
-    //     this.setState ({ listItems: this.props.originalList.map((originalItem, i) => {
+    //     this.setState ({ listItems: this.props.originalList.map((item, i) => {
     //         return (                
     //             <FiltrationListItem key={`fi_${i}`}/>
     //         );
@@ -23,17 +23,27 @@ class FiltrationList extends React.Component {
             return(
                 this.props.items.map((item) => {
                     return ( 
-                        <FiltrationListItem item={ item } key={ item.name } />
+                        <FiltrationListItem 
+                            item={ item } 
+                            key={ item.name }
+                            handleDelete={ this.props.handleDelete }
+                            handleEdit={ this.props.handleEdit }
+                        />
                     )
                 })
-            )
+            );
+        }
+        else {
+            return '';
         }
     }
 
     render() {
         return (
             <div>                
-                { this.renderItems() }                
+                { 
+                    this.renderItems() 
+                }                
             </div>
         )
     }
