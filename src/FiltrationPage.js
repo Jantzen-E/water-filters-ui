@@ -6,6 +6,7 @@ import Form from './Form';
 class FiltrationPage extends React.Component {
     constructor(props) {
         super(props);
+        this.myRef = React.createRef();
         this.state = {
             list: [],
             editItem: {}
@@ -88,23 +89,27 @@ class FiltrationPage extends React.Component {
         this.setState({
           editItem: item
         });
+        console.log('this.myref:', this.myRef)
+        this.myRef.current.scrollIntoView();   
     }
 
     render() {
         debugger;
         return (
             <div>
-                <h1>Water Filters</h1>
-                <FiltrationList 
-                    items={this.state.list}
-                    handleEdit={this.handleEdit}
-                    handleDelete={this.handleDelete}
-                />
-                <Form           
-                    handleSubmit={this.createUpdateItem}
-                    editItem={this.state.editItem}
-                    onAdd={this.handleAddItem}
-                />
+                <div>
+                    <h1>Water Filters</h1>
+                    <FiltrationList 
+                        items={this.state.list}
+                        handleEdit={this.handleEdit}
+                        handleDelete={this.handleDelete}
+                    />
+                    <Form passref={this.myRef}        
+                        handleSubmit={this.createUpdateItem}
+                        editItem={this.state.editItem}
+                        onAdd={this.handleAddItem}
+                    />
+                </div>
             </div>
         )
     }

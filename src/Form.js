@@ -53,14 +53,15 @@ class Form extends React.Component {
           URL: "",
           mode: "add"
         });
-
+        e.target.reset(); //this resets the form back to the original value
     }
 
     render() {
         return (
             <div>
                 <h3>Add a filter to the list</h3>
-                <form onSubmit={this.handleSubmit}>
+                <form ref={this.props.passref}
+                    onSubmit={this.handleSubmit}>
                     <label>Name of filter: </label>
                     <input
                         type="text"
@@ -76,14 +77,12 @@ class Form extends React.Component {
                         <option value="" disabled></option>
                         <option>activated carbon</option>
                         <option>ceramic</option>
-                        <option>reverse osmosis</option>
+                        <option>gravity</option>
                         <option>ultra violet</option>
-                        <option>activated aluminia</option>
-                        <option>water distillation</option>
-                        <option>iodine</option>
-                        <option>chlorine</option>
-                        <option>sand</option>
-                        <option>hollow fiber membrane</option>
+                        <option>bottle</option>
+                        <option>pump</option>
+                        <option>inline</option>
+                        <option>straw</option>
                         <option>other</option>                        
                     </select>
                     <br/>
@@ -107,7 +106,6 @@ class Form extends React.Component {
                     <br/>
                     <button type="submit">
                         {this.state.mode === "add" ? "Add" : "Update"}
-                        {/* {this.setState.type = " "} */}
                     </button>
                 </form>
             </div>
