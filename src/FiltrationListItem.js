@@ -21,33 +21,42 @@ class FiltrationListItem extends React.Component {
         return (            
             <div className="list">
                 <ul className="listStyleType">
-                    <li>Name: { this.props.item.name }</li>
-                    <li>Type: { this.props.item.type }</li>
-                    <li>Price: { this.props.item.price }</li>
-                    <li>
-                        <button>
-                            <a 
-                                href= { this.props.item.URL }>Visit page
-                            </a>
-                        </button>
-                    </li>
-                    <li>
-                        <button 
-                            className="edit"
-                            onClick={ this.handleEdit}
-                            >Edit
-                            
-                        </button>
-                    </li>
-                    <li>
-                        <button 
-                            className="delete"
-                            onClick={ this.handleDelete }
-                        >
-                            Delete
-                        </button>
-                    </li>
+                    <li className="itemName">{ this.props.item.name }</li>
+                    <li className="itemType">Type: { this.props.item.type }</li>
+                    <li className="itemPrice">Price: { this.props.item.price }</li>
+                    <div className="itemButtons">
+                        <li>
+                            <button className="visitPageButton">
+                                <a
+                                    href= { this.props.item.URL }>Visit page
+                                   
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <button 
+                                className="edit"
+                                onClick={ this.handleEdit}
+                                >Edit
+                            </button>
+                        </li>
+                        <li>
+                            <button 
+                                className="delete"
+                                onClick={ this.handleDelete }
+                            >
+                                Delete
+                            </button>
+                        </li>
+                    </div>
                 </ul>
+                <a href= { this.props.item.URL }>
+                    <img
+                        src={ this.props.item.imgURL }
+                        alt={ this.props.item.name }
+                        className="filterImage"
+                    />
+                </a>
             </div>   
         );
     }

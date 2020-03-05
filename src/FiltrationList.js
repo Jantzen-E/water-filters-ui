@@ -20,7 +20,7 @@ class FiltrationList extends React.Component {
 
     renderItems() {
         if(this.props.items) {
-            return(
+            return (
                 this.props.items.map((item) => {
                     return ( 
                         <FiltrationListItem 
@@ -40,7 +40,7 @@ class FiltrationList extends React.Component {
 
     render() {
         return (
-            <div>                
+            <div className="item3">                
                 { 
                     this.renderItems() 
                 }                

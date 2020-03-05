@@ -96,19 +96,32 @@ class FiltrationPage extends React.Component {
     render() {
         debugger;
         return (
-            <div>
-                <div>
-                    <h1>Water Filters</h1>
+            <div className="page">
+                <div className="grid-container">
+                    <h1 className="item1">
+                        <span>
+                            <span className="firstWord">Water</span>
+                            <span className="secondWord">Filters</span>
+                        </span>
+                        <span id="subtitle">Be prepared for emergencies and find a water filter that will fit your needs</span>
+                    </h1>
                     <FiltrationList 
                         items={this.state.list}
                         handleEdit={this.handleEdit}
                         handleDelete={this.handleDelete}
+                        className="item1"
                     />
                     <Form passref={this.myRef}        
                         handleSubmit={this.createUpdateItem}
                         editItem={this.state.editItem}
                         onAdd={this.handleAddItem}
+                        className="item2"
                     />
+                </div>
+                <div className="item5">
+                    <div>Jantzen 2020</div>
+                    <div className="footerLinks"><a href="https://www.linkedin.com/in/jantzen-e/">LinkedIn</a></div>
+                    <div className="footerLinks"><a href="https://github.com/Jantzen-E">GitHub</a></div>
                 </div>
             </div>
         )
