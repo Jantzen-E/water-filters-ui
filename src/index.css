@@ -20,8 +20,17 @@ code {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(2, 14, 49);
-  padding: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
   margin: 4%;
+}
+
+.list:nth-child(even) {
+  flex-flow: row-reverse;
+  display: flex;
+  justify-content: space-between;
 }
 
 .listStyleType {
@@ -30,9 +39,8 @@ code {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  /* font-size: 2em; */
   color: white;
-  padding-left: 0px;
+  margin-right: 2em;
 }
 
 .blank {
@@ -42,7 +50,6 @@ code {
 select {
     text-align-last: center;
     text-align: center;
-    /* -ms-text-align-last: center; */
     -moz-text-align-last: center;
 }
 
@@ -117,6 +124,7 @@ img {
   max-height: 300px;
   min-height: 250px;
   cursor: pointer;
+  margin: 2em;
 }
 
 .formatForm {
@@ -173,6 +181,9 @@ form {
 
 .itemName {
   font-size: 3.6em;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-right: 2em; */
 }
 
 .itemType {
@@ -220,6 +231,13 @@ form {
 
 .footerLinks {
   color: black;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1em;
 }
 
 
