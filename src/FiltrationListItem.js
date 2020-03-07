@@ -1,11 +1,17 @@
 import React from "react";
+import Modal from './Modal';
 
 class FiltrationListItem extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            show: false
+        }
+
         this.handleEdit = this.handleEdit.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
+        this.showModal = this.showModal.bind(this);
     }
 
     handleDelete() {
@@ -16,6 +22,12 @@ class FiltrationListItem extends React.Component {
     handleEdit() {
         this.props.handleEdit(this.props.item);
     }
+
+    showModal(e) {
+        this.setState({
+            show: !this.state.show
+        });
+    };
 
     render() {
         return (            
@@ -43,10 +55,12 @@ class FiltrationListItem extends React.Component {
                         <li>
                             <button 
                                 className="delete"
-                                onClick={ this.handleDelete }
+                                onClick={e => {this.showModal(e)}}
+                                /* onClick={ this.handleDelete } */
                             >
                                 Delete
                             </button>
+                            <Modal onClose={this.showModal} show={this.state.show}/>
                         </li>
                     </div>
                 </ul>
