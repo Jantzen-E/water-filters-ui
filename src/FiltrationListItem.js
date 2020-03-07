@@ -16,7 +16,6 @@ class FiltrationListItem extends React.Component {
 
     handleDelete() {
         this.props.handleDelete(this.props.item._id);
-        
     }
 
     handleEdit() {

@@ -65,7 +65,7 @@ class Form extends React.Component {
         return (
             <div className="item4">
                 <div className="formatForm">
-                    <h3 className="formTitle">Add a filter to the list</h3>
+                    <h3 className="formTitle">{this.state.mode === "add" ? "Add a filter to the list" : "Update Filter"}</h3>
                     <form ref={this.props.passref}
                         onSubmit={this.handleSubmit}>
                         <label>Name of filter: </label>
@@ -118,6 +118,38 @@ class Form extends React.Component {
                             {this.state.mode === "add" ? "Add" : "Update"}
                         </button>
                     </form>
+                </div>
+                <div>
+                    <img className="sideMenu" src="https://x9b1f1ulw2g31537u1gl95q1-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Survival-Water-Filters-for-Preppers-Hero.jpg"></img>
+                    <h3 className="paragraphTitle">Why are water filters useful?</h3>
+                    <p className="paragraph">Water filters are useful because they can take contaminants out of water so that it is safe to drink.
+                        They are great for camping, hiking, emergency preparedness etc.  It is especially useful if you live in areas where the tap water
+                        is not always safe to drink.  
+                        <div/>
+                        <br/>
+                        <img className="sideMenu" src="https://www.verdict.co.uk/wp-content/uploads/2019/08/water-harvester-1440x970.jpg"></img>
+                        <br/>
+                        This page displays several different kinds of filters that could be used in different situations.  
+                        When buying a filter, keep these differences in mind and do your research so you know where your water filter
+                        will be the most useful for your specific needs.  
+                        <div/>
+                        <br/>
+                        <img className="sideMenu" src="https://theoutdoorland.com/wp-content/uploads/2016/04/Best-Survival-Water-Filter-1.jpg"></img>
+                        <br/>
+                        Some water filters can filter out viruses and chemicals while other filters
+                        take filter out bacteria, protozoa, and larger microorganisms.  
+                        <div/>
+                        <br/>
+                        <img className="sideMenu" src="https://x9b1f1ulw2g31537u1gl95q1-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Giardia-small-intenstine-infection-Wiki-CC.jpg"></img>
+                        <br/>
+                        Water filters that can filter out viruses and 
+                        chemicals will usually be more expensive but may be necessary depending on where you plan to use them.  Also, if you want to be
+                        extra cautious, boil your water then use the water filter to drink it after it cools.
+                        <div/>
+                        <br/>
+                        <img className="sideMenu" src="https://www.wereviews.com/wp-content/uploads/2019/09/water-filter-first-choice-600x600.jpg"></img>
+                        <br/>
+                    </p>
                 </div>
             </div>
         );

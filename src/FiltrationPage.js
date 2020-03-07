@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import FiltrationList from './FiltrationList';
 import Form from './Form';
+// document.getelementbyid().click();
 
 class FiltrationPage extends React.Component {
     constructor(props) {
@@ -9,7 +10,8 @@ class FiltrationPage extends React.Component {
         this.myRef = React.createRef();
         this.state = {
             list: [],
-            editItem: {}
+            editItem: {},
+            // show: false,
         };
 
         this.fetchItems = this.fetchItems.bind(this);
@@ -18,6 +20,7 @@ class FiltrationPage extends React.Component {
         this.handleInputChange = this.handleInputChange.bind(this);
         this.deleteItem = this.deleteItem.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
+        // this.showModal = this.showModal.bind(this);
     }
 
     fetchItems(options = {}) {
@@ -93,6 +96,12 @@ class FiltrationPage extends React.Component {
         this.myRef.current.scrollIntoView();   
     }
 
+    // showModal(e) {
+    //     this.setState({
+    //         show: !this.state.show
+    //     })
+    // };
+
     render() {
         debugger;
         return (
@@ -118,6 +127,7 @@ class FiltrationPage extends React.Component {
                         className="item2"
                     />
                 </div>
+                {/* <Modal onClose={this.showModal} show={this.state.show}/> */}
                 <div className="item5">
                     <div>Jantzen 2020</div>
                     <div className="footerLinks"><a href="https://www.linkedin.com/in/jantzen-e/">LinkedIn</a></div>
