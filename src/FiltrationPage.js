@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import FiltrationList from './FiltrationList';
 import Form from './Form';
+import './Responsive.css';
 // document.getelementbyid().click();
 
 class FiltrationPage extends React.Component {

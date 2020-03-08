@@ -1,5 +1,6 @@
 import React from 'react';
 import FiltrationListItem from './FiltrationListItem';
+import './Responsive.css';
 
 class FiltrationList extends React.Component {
     constructor(props) {

@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from './Modal';
+import './Responsive.css';
 
 class FiltrationListItem extends React.Component {
     constructor(props) {

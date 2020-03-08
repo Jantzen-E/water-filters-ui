@@ -13,8 +13,6 @@ code {
 }
 
 .list {
-  /* text-align: left; */
-  /* list-style-type: none; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -141,17 +139,17 @@ div.item3 {
   margin-right: 0px;
 }
 
-.sideMenu1 {
+/* .sideMenu1 {
   width: auto;
   max-width: 180px;
   min-width: 150px;
   height: auto;
-  max-height: 1180px;
+  max-height: 180px;
   min-height: 150px;
   margin-bottom: 1em;
   margin-left: 0px;
   margin-right: 0px;
-}
+} */
 
 .formatForm {
   padding: 0%;
@@ -173,7 +171,6 @@ input {
 }
 
 .selectMenu {
-  /* height: 3em; */
   font-size: 1em;
   cursor: pointer;
   margin-bottom: 9%;
@@ -284,8 +281,5 @@ a {
   margin-left: 0px;
 }
 
-/* .page {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRw6HEMUkhGa1syHWRxVnN8XiBjE9NFwDguZ7or3cW1hI0l_1OH');
-} */
 
 

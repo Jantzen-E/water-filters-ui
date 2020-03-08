@@ -1,0 +1,301 @@
+@media screen and (max-width: 1200px) {
+
+    .filterImage {
+        width: auto;
+        max-width: 250px;
+        min-width: 208px;
+        height: auto;
+        max-height: 250px;
+        min-height: 208px;
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .filterImage {
+        width: auto;
+        max-width: 200px;
+        min-width: 167px;
+        height: auto;
+        max-height: 200px;
+        min-height: 167px;
+        margin: 1em;
+    }
+
+    .firstWord {
+        font-size: 1em;
+    }
+
+    .secondWord {
+        font-size: 1em;
+    }
+
+    #subtitle {
+        font-size: .3em;
+    }
+
+    .itemName {
+        font-size: 2.6em;
+    }
+
+    .itemType {
+        font-size: 1.3em;
+    }
+
+    .itemPrice {
+        font-size: 1.3em;
+    }
+
+    .formTitle {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: .8em;
+    }
+
+    .paragraph {
+        font-size: 1.3em;
+    }
+
+    .paragraphTitle {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .item5 {
+        font-size: 1em;
+    }
+
+    .filterImage {
+        width: auto;
+        max-width: 150px;
+        min-width: 125px;
+        height: auto;
+        max-height: 150px;
+        min-height: 125px;
+        margin: 1em;
+    }
+
+    .itemName {
+        font-size: 2em;
+    }
+
+    .itemType {
+        font-size: 1em;
+    }
+
+    .itemPrice {
+        font-size: 1em;
+    }
+
+    .paragraph {
+        font-size: 1em;
+    }
+
+    .paragraphTitle {
+        font-size: 1.2em;
+    }
+
+    .sideMenu {
+        width: auto;
+        max-width: 150px;
+        min-width: 125px;
+        height: auto;
+        max-height: 150px;
+        min-height: 125px;
+        margin: 1em;
+    }
+
+    .inputFields {
+        font-size: .8em;
+    }
+
+    .selectMenu {
+        font-size: .8em;
+        cursor: pointer;
+        margin-bottom: 9%;
+        width: 90%;
+    }
+
+    .formAddButton {
+        width: 60%;
+    }
+
+    .visitPageButton {
+        font-weight: 900;
+        margin-bottom: 20px;
+        width: 150px;
+    }
+
+    .edit {
+        font-weight: 900;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .delete {
+        font-weight: 900;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .visitPageButton {
+        font-weight: 700;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+
+    .edit {
+        font-weight: 700;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .delete {
+        font-weight: 700;
+        width: 70px;
+    }
+
+    .itemName {
+        font-size: 1.4em;
+    }
+
+    .itemType {
+        font-size: .8em;
+    }
+
+    .itemPrice {
+        font-size: .8em;
+    }
+
+    .formTitle {
+        font-size: .8em;
+    }
+
+    label {
+        font-size: .6em;
+    }
+
+    .paragraph {
+        font-size: .8em;
+    }
+
+    .paragraphTitle {
+        font-size: 1em;
+    }
+
+    .selectMenu {
+        font-size: .8em;
+        margin-bottom: 9%;
+        width: 90%;
+    }
+
+    .formAddButton {
+        font-size: .9em;
+        width: 50%;
+    }
+
+    .filterImage {
+        width: auto;
+        max-width: 120px;
+        min-width: 100px;
+        height: auto;
+        max-height: 120px;
+        min-height: 100px;
+        margin: .5em; 
+    }
+
+    .sideMenu {
+        width: auto;
+        max-width: 120px;
+        min-width: 100px;
+        height: auto;
+        max-height: 120px;
+        min-height: 100px;
+        margin: 1em;
+    }
+
+    .listStyleType {
+        margin-right: 1em;
+    }
+
+    .firstWord {
+        font-size: .8em;
+    }
+
+    .secondWord {
+        font-size: .8em;
+    }
+
+    #subtitle {
+        font-size: .2em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .filterImage {
+        width: auto;
+        max-width: 90px;
+        min-width: 75px;
+        height: auto;
+        max-height: 90px;
+        min-height: 75px;
+        margin: .5em; 
+    }
+
+    .sideMenu {
+        width: auto;
+        max-width: 90px;
+        min-width: 75px;
+        height: auto;
+        max-height: 90px;
+        min-height: 75px;
+        margin: 1em;
+    }
+
+    .visitPageButton {
+        font-weight: 500;
+        margin-bottom: 5px;
+        width: 100px;
+        font-size: 11px;
+    }
+
+    .edit {
+        font-weight: 500;
+        width: 80px;
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .delete {
+        font-weight: 500;
+        width: 70px;
+        font-size: 11px;
+    }
+
+    .itemName {
+        font-size: 1.2em;
+    }
+
+    .itemType {
+        font-size: .8em;
+    }
+
+    .itemPrice {
+        font-size: .8em;
+    }
+
+    .listStyleType {
+        padding-left: .2em;
+    }
+
+    .selectMenu {
+        font-size: .7em;
+    }
+}
