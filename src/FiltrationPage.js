@@ -26,7 +26,7 @@ class FiltrationPage extends React.Component {
 
     fetchItems(options = {}) {
         axios
-            .get("http://localhost:5000/api/waterFilters", { params: options })
+            .get("https://water-filters-api.herokuapp.com/api/waterFilters", { params: options })
             .then( response => {
                 const list = response.data;
                 console.log(list);
@@ -44,7 +44,7 @@ class FiltrationPage extends React.Component {
     createUpdateItem(item, mode, id) {
         if (mode === "add") {
           axios
-            .post("http://localhost:5000/api/waterFilters", item)
+            .post("https://water-filters-api.herokuapp.com/api/waterFilters", item)
             .then(response => {
               this.fetchItems();
             })
@@ -53,7 +53,7 @@ class FiltrationPage extends React.Component {
         } 
         else if (mode === "edit") {
           axios
-            .put(`http://localhost:5000/api/waterFilters/${id}`, item)
+            .put(`https://water-filters-api.herokuapp.com/api/waterFilters/${id}`, item)
             .then(response => {
               this.fetchItems();
             })
@@ -63,7 +63,7 @@ class FiltrationPage extends React.Component {
 
     deleteItem(id) {
         axios
-            .delete(`http://localhost:5000/api/waterFilters/${id}`)
+            .delete(`https://water-filters-api.herokuapp.com/api/waterFilters/${id}`)
             .then(response => {
                 this.fetchItems();
             })
