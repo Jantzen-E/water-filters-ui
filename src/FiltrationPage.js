@@ -79,7 +79,8 @@ class FiltrationPage extends React.Component {
 
     handleDelete(id) {
         debugger;
-        this.deleteItem(id);
+        this.deleteItem(id)
+        console.log('deleting', id);
     }
 
     handleInputChange(event) {
