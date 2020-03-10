@@ -122,7 +122,7 @@ class Form extends React.Component {
                 <div>
                     <img className="sideMenu" alt="water filters" src="https://x9b1f1ulw2g31537u1gl95q1-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Survival-Water-Filters-for-Preppers-Hero.jpg"></img>
                     <h3 className="paragraphTitle">Why are water filters useful?</h3>
-                    <p className="paragraph">Water filters are useful because they can take contaminants out of water so that it is safe to drink.
+                    <div className="paragraph">Water filters are useful because they can take contaminants out of water so that it is safe to drink.
                         They are great for camping, hiking, emergency preparedness etc.  It is especially useful if you live in areas where the tap water
                         is not always safe to drink.  
                         <div/>
@@ -149,7 +149,7 @@ class Form extends React.Component {
                         <br/>
                         <img className="sideMenu" alt="water filter" src="https://www.wereviews.com/wp-content/uploads/2019/09/water-filter-first-choice-600x600.jpg"></img>
                         <br/>
-                    </p>
+                    </div>
                 </div>
             </div>
         );

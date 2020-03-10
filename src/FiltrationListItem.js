@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from './Modal';
+// import Modal from './Modal';
 import './Responsive.css';
 
 class FiltrationListItem extends React.Component {
@@ -55,12 +55,12 @@ class FiltrationListItem extends React.Component {
                         <li>
                             <button 
                                 className="delete"
-                                onClick={e => {this.showModal(e)}}
-                                /* onClick={ this.handleDelete } */
+                                /* onClick={e => {this.showModal(e)}} */
+                                onClick={ this.handleDelete }
                             >
                                 Delete
                             </button>
-                            <Modal onClose={this.showModal} show={this.state.show} handleDelete={this.props.handleDelete}/>
+                            {/* <Modal onClose={this.showModal} show={this.state.show} handleDelete={this.props.handleDelete} filterId={this.props.item._id}/> */}
                         </li>
                     </div>
                 </ul>

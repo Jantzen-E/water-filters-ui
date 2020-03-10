@@ -66,6 +66,7 @@ class FiltrationPage extends React.Component {
             .delete(`https://water-filters-api.herokuapp.com/api/waterFilters/${id}`)
             .then(response => {
                 this.fetchItems();
+                console.log(response, id)
             })
             .catch(error => {
                 debugger;
