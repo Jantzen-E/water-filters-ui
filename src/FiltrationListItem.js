@@ -60,7 +60,7 @@ class FiltrationListItem extends React.Component {
                             >
                                 Delete
                             </button>
-                            <Modal onClose={this.showModal} show={this.state.show}/>
+                            <Modal onClose={this.showModal} show={this.state.show} handleDelete={this.props.handleDelete}/>
                         </li>
                     </div>
                 </ul>

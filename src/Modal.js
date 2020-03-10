@@ -26,7 +26,7 @@ class Modal extends React.Component {
                 <div className="content">To delete this item permanently, click yes.  To go back, click no.
                 </div>
                 <div className="actions">
-                    <button className="toggle-button1" onClick={ this.handleDelete } id="yes">
+                    <button className="toggle-button1" onClick={ this.props.handleDelete } id="yes">
                         Yes
                     </button> 
                     <button className="toggle-button2" onClick={this.onClose}>
