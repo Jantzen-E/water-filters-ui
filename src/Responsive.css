@@ -248,6 +248,7 @@
         min-height: 67px;
         margin: .5em;
         margin-left: 1em;
+        position: static;
     }
 
     .sideMenu {
@@ -263,25 +264,25 @@
     .visitPageButton {
         font-weight: 500;
         margin-bottom: 5px;
-        width: 100px;
+        width: 80px;
         font-size: 11px;
     }
 
     .edit {
         font-weight: 500;
-        width: 80px;
+        width: 70px;
         margin-bottom: 20px;
         font-size: 11px;
     }
 
     .delete {
         font-weight: 500;
-        width: 70px;
+        width: 60px;
         font-size: 11px;
     }
 
     .itemName {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .itemType {
@@ -303,5 +304,9 @@
 
     .list {
         margin-bottom: 4.99%;
+    }
+
+    .formTitle {
+        font-size: .7em;
     }
 }
