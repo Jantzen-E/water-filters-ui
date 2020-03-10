@@ -241,21 +241,21 @@
 
     .filterImage {
         width: auto;
-        max-width: 90px;
-        min-width: 75px;
+        max-width: 80px;
+        min-width: 67px;
         height: auto;
-        max-height: 90px;
-        min-height: 75px;
+        max-height: 80px;
+        min-height: 67px;
         margin: .5em; 
     }
 
     .sideMenu {
         width: auto;
-        max-width: 90px;
-        min-width: 75px;
+        max-width: 80px;
+        min-width: 67px;
         height: auto;
-        max-height: 90px;
-        min-height: 75px;
+        max-height: 80px;
+        min-height: 67px;
         margin: 1em;
     }
 
