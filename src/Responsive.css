@@ -117,7 +117,7 @@
         font-size: .8em;
         cursor: pointer;
         margin-bottom: 9%;
-        width: 90%;
+        width: 80%;
     }
 
     .formAddButton {
@@ -192,7 +192,7 @@
     .selectMenu {
         font-size: .8em;
         margin-bottom: 9%;
-        width: 90%;
+        width: 80%;
     }
 
     .formAddButton {
@@ -246,7 +246,8 @@
         height: auto;
         max-height: 80px;
         min-height: 67px;
-        margin: .5em; 
+        margin: .5em;
+        margin-left: 1em;
     }
 
     .sideMenu {
@@ -269,7 +270,7 @@
     .edit {
         font-weight: 500;
         width: 80px;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
         font-size: 11px;
     }
 
@@ -297,5 +298,10 @@
 
     .selectMenu {
         font-size: .7em;
+        width: 80%;
+    }
+
+    .list {
+        margin-bottom: 4.99%;
     }
 }

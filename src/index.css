@@ -17,7 +17,7 @@ code {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(2, 14, 49);
+  background-color: rgb(23, 49, 126);
   padding-top: 4%;
   padding-bottom: 4%;
   padding-left: 4%;
@@ -163,18 +163,20 @@ div.item3 {
 
 .formTitle {
   font-size: 1.3em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 input {
   font-size: 1em;
-  width: 90%;
+  width: 80%;
 }
 
 .selectMenu {
   font-size: 1em;
   cursor: pointer;
   margin-bottom: 9%;
-  width: 90%;
+  width: 80%;
 }
 
 form {
@@ -191,17 +193,17 @@ form {
 }
 
 .secondWord {
-  color: rgb(18, 41, 110);
+  color: rgb(23, 49, 126);
   font-size: 1.6em;
 }
 
 .formAddButton {
   font-size: 1.2em;
   width: 75%;
-  background-color: rgb(2, 14, 49);
+  background-color: rgb(23, 49, 126);
   color: white;
   margin-top: 4%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   cursor: pointer;
 }
 
