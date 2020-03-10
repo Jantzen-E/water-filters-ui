@@ -241,11 +241,11 @@
 
     .filterImage {
         width: auto;
-        max-width: 80px;
-        min-width: 67px;
+        max-width: 75px;
+        min-width: 62.5px;
         height: auto;
-        max-height: 80px;
-        min-height: 67px;
+        max-height: 75px;
+        min-height: 62.5px;
         margin: .5em;
         margin-left: 1em;
         position: static;
@@ -253,11 +253,11 @@
 
     .sideMenu {
         width: auto;
-        max-width: 80px;
-        min-width: 67px;
+        max-width: 75px;
+        min-width: 62.5px;
         height: auto;
-        max-height: 80px;
-        min-height: 67px;
+        max-height: 75px;
+        min-height: 62.5px;
         margin: 1em;
     }
 
@@ -308,5 +308,10 @@
 
     .formTitle {
         font-size: .7em;
+    }
+
+    .paragraph {
+        margin-left: 1%;
+        margin-right: 1%;
     }
 }
