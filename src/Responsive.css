@@ -258,7 +258,7 @@
         height: auto;
         max-height: 75px;
         min-height: 62.5px;
-        margin: 1em;
+        margin: .5em;
     }
 
     .visitPageButton {
@@ -298,7 +298,7 @@
     }
 
     .selectMenu {
-        font-size: .7em;
+        font-size: .6em;
         width: 80%;
     }
 
@@ -313,5 +313,16 @@
     .paragraph {
         margin-left: 1%;
         margin-right: 1%;
+        font-size: .6em;
+    }
+
+    .paragraphTitle {
+        font-size: .8em;
+    }
+
+    @media screen and (max-width: 455px) {
+        .selectMenu {
+            font-size: .38em;
+        }
     }
 }

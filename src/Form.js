@@ -78,7 +78,7 @@ class Form extends React.Component {
                         />
                         <label>Choose a filter type: </label>
                         <select className="selectMenu" required onChange={e => this.setState({ type: e.target.value })}>
-                            <option value="" >-- Select One --</option>
+                            <option value="">-- Select One --</option>
                             <option value="" disabled></option>
                             <option>activated carbon</option>
                             <option>ceramic</option>
